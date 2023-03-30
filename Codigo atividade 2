@@ -1,0 +1,13 @@
+def is_fibonacci(n):
+# Verifica se o número pertence à sequência de Fibonacci
+a, b = 0, 1
+while b < n:
+a, b = b, a + b
+return b == n
+
+def fibonacci_sequence(n):
+# Retorna a sequência de Fibonacci até o número informado
+sequence = [0, 1]
+while sequence[-1] < n:
+sequence.append(sequence[-1] + sequence[-2])
+return sequence
