@@ -1,0 +1,12 @@
+# Solicita ao usuário que digite uma palavra
+palavra = input("Digite uma palavra: ")
+
+# Cria uma string vazia para armazenar a palavra invertida
+palavra_invertida = ""
+
+# Percorre a palavra da última letra até a primeira, concatenando cada letra na string palavra_invertida
+for i in range(len(palavra) - 1, -1, -1):
+  palavra_invertida += palavra[i]
+
+# Imprime a palavra invertida na tela
+print("Palavra invertida:", palavra_invertida)
